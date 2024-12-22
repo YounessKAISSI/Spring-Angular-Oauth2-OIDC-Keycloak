@@ -19,9 +19,9 @@ public class InventoryServiceApplication {
     @Bean
     CommandLineRunner commandLineRunner(ProductRespository productRespository){
         return args -> {
-            productRespository.save(Product.builder().id(UUID.randomUUID().toString()).name("Computer").price(5000).quantity(5).build());
-            productRespository.save(Product.builder().id(UUID.randomUUID().toString()).name("Printer").price(1200).quantity(10).build());
-            productRespository.save(Product.builder().id(UUID.randomUUID().toString()).name("Smart Phone").price(4200).quantity(34).build());
+            productRespository.save(Product.builder().id("P01").name("Computer").price(5000).quantity(5).build());
+            productRespository.save(Product.builder().id("P02").name("Printer").price(1200).quantity(10).build());
+            productRespository.save(Product.builder().id("P03").name("Smart Phone").price(4200).quantity(34).build());
         };
     }
 }

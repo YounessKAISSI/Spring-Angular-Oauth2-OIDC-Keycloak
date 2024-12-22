@@ -1,4 +1,4 @@
-package org.enset.app.inventoryservice.security;
+package org.enset.app.orderservice.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
